@@ -29,7 +29,8 @@ public enum Treasure {
     REWARD,
     EMPTY;
 
-    private static final List<Treasure> common = new ArrayList<Treasure>(Arrays.asList(TOOLS, ARMOUR, WEAPONS));
+    private static final List<Treasure> common = new ArrayList<Treasure>(
+            Arrays.asList(TOOLS, ARMOUR, WEAPONS, ORE, FOOD, BLOCKS));
 
     public static ITreasureChest generate(IWorldEditor editor, Random rand, Coord pos, int level, boolean trapped) {
 

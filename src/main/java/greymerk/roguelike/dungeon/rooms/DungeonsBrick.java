@@ -143,7 +143,13 @@ public class DungeonsBrick extends DungeonBase {
         }
 
         List<Treasure> types = new ArrayList<Treasure>(
-                Arrays.asList(Treasure.ARMOUR, Treasure.WEAPONS, Treasure.TOOLS, Treasure.ORE));
+                Arrays.asList(
+                        Treasure.ARMOUR,
+                        Treasure.WEAPONS,
+                        Treasure.TOOLS,
+                        Treasure.ORE,
+                        Treasure.FOOD,
+                        Treasure.BLOCKS));
         Treasure.createChests(editor, rand, 1, space, types, Dungeon.getLevel(origin.getY()));
         Spawner.generate(editor, rand, settings, new Coord(x, y, z));
         return true;
